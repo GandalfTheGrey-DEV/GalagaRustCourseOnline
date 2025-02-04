@@ -13,16 +13,6 @@ Welcome to the **Online Galaga Course**! This course will guide you through crea
 
 ---
 
-## Requirements
-No advanced knowledge is required! A basic understanding of programming is helpful. Here's what you'll need:
-
-### Tools:
-- A text editor or IDE (e.g., VS Code, IntelliJ, or RustRover).
-- A programming language (e.g., Rust or your preferred one).
-- A 2D game engine (if applicable, depending on your toolset).
-
----
-
 ## Course Project
 By the end of the course, you will have created:
 - A complete Galaga-style game.

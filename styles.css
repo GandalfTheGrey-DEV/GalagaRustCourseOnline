@@ -1,0 +1,161 @@
+/* General Reset and Dark Cyber Theme */
+body {
+    font-family: 'Roboto Mono', monospace; /* Clean monospace font */
+    background: #0d1117; /* Dark background */
+    color: #c9d1d9; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #161b22; /* Slightly lighter dark tone */
+    color: #00d9ff; /* Neon cyan */
+    padding: 20px 30px;
+    font-size: 24px;
+    text-align: left;
+    border-bottom: 2px solid #00d9ff; /* Neon border */
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.4); /* Neon glow */
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.search-bar input {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #00d9ff; /* Neon border */
+    border-radius: 5px;
+    background-color: #161b22;
+    color: #c9d1d9;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 8px #00d9ff;
+    border-color: #00ffc3; /* Slight green hue on focus */
+}
+
+/* Task Container */
+.task-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 25px;
+    background: #161b22; /* Slightly lighter than the body */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.1); /* Subtle shadow */
+    border: 1px solid #263238; /* Muted border */
+}
+
+.task-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #263238; /* Dark border */
+    border-radius: 10px;
+    background: #0d1117; /* Match body background */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-5px); /* Float upwards slightly */
+    border-color: #00d9ff; /* Neon highlight */
+    box-shadow: 0 0 12px rgba(0, 217, 255, 0.4);
+}
+
+h2 {
+    color: #00ffc3; /* Neon green */
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00ffc3;
+    padding-bottom: 4px;
+}
+
+p.instructions {
+    color: #f0f6fc; /* Muted light white */
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Code Editor */
+.editor-container {
+    margin-bottom: 15px;
+    border: 2px solid #263238; /* Dark border */
+    border-radius: 8px;
+    overflow: hidden;
+    background: #0d1117; /* Code editor matches body */
+}
+
+.CodeMirror {
+    height: auto;
+    min-height: 200px;
+    font-size: 14px;
+    background: #0d1117; /* Dark base */
+    color: #00ffc3; /* Neon green text */
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #00d9ff;
+    color: #0d1117;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 217, 255, 0.5); /* Neon glow */
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #00ffc3; /* Slight green hue on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Output Box */
+.outlined-container {
+    border: 2px solid #00d9ff; /* Matching neon blue */
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    background-color: #161b22; /* Dark container */
+    color: #00ffc3; /* Neon green */
+    margin-top: 15px;
+    white-space: pre-wrap;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #c9d1d9;
+    background-color: #161b22;
+    font-size: 14px;
+    margin-top: 80px;
+    padding: 15px 0;
+    border-top: 1px solid #263238; /* Dark border */
+}
+
+/* Glow animations for highlighting */
+@keyframes neonGlow {
+    0%,
+    100% {
+        text-shadow: 0 0 8px #00d9ff, 0 0 16px #00d9ff, 0 0 24px #00d9ff;
+    }
+    50% {
+        text-shadow: 0 0 16px #00ffc3, 0 0 32px #00ffc3, 0 0 48px #00ffc3;
+    }
+}
+
+h2.highlight {
+    animation: neonGlow 1.5s infinite;
+}
